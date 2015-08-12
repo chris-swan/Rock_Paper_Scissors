@@ -3,7 +3,7 @@
 
     class RpsTest extends PHPUnit_Framework_TestCase
     {
-        function test_rps_rock_draw()
+        function test_rpsGame_rockDraw()
         {
             //Arrange
             $test_Rps = new Rps;
@@ -11,7 +11,7 @@
             $player_two = "rock";
 
             //Act
-            $result = $test_Rps->$test_rps_rock_draw($player_one, $player_two);
+            $result = $test_Rps->rpsGame($player_one, $player_two);
 
             //Assert
             $this->assertEquals("draw", $result);
