@@ -30,4 +30,19 @@
             //Assert
             $this->assertEquals("Player Two Wins!", $result);
         }
-    }?>
+
+        function test_rpsGame_rockScissors()
+        {
+            //Arrange
+            $test_Rps = new Rps;
+            $player_one = "rock";
+            $player_two = "scissors";
+
+            //Act
+            $result = $test_Rps->rpsGame($player_one, $player_two);
+
+            //Assert
+            $this->assertEquals("Player One Wins!", $result);
+        }
+    }
+?>
