@@ -1,7 +1,22 @@
- h2 {
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
      text-align: center;
+     color: white;
+     size: 60px;
      }
 .button {
     text-align: center;
-
+    }
+body {
+    background-image: url("http://i.huffpost.com/gen/1773446/images/o-ROCK-PAPER-SCISSORS-facebook.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+form{
+    color: white;
 }

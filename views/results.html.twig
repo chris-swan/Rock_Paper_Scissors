@@ -1,11 +1,20 @@
 <html>
     <head><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
-        <title>Results</title>
+          <link rel='stylesheet' href='styles/styles.css'>
+
+            <title>Results</title>
     </head>
     <body>
         <h1>{{ result }}</h1>
-        <form action="/">
-            <button type = submit>Play again!</button>
-        </form>
+        <div class= 'container'>
+          <div class='row'>
+            <div class='col-md-12'>
+                <form action="/">
+                    <div class= 'button'>
+                        <button type = submit class='btn btn-warning'>Play again!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </body>
 </html>

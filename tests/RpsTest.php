@@ -71,6 +71,19 @@
             //Assert
             $this->assertEquals("Player Two Wins!", $result);
         }
+        function test_rpsGame_mixedInput()
+        {
+            //Arrange
+            $test_Rps = new Rps;
+            $player_one = "rock";
+            $player_two = "jfkeidl34";
+
+            //Act
+            $result = $test_Rps->rpsGame($player_one, $player_two);
+
+            //Assert
+            $this->assertEquals("Please enter either rock, paper or scissors", $result);
+        }
 
     }
 ?>
