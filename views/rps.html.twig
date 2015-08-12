@@ -1,19 +1,35 @@
 <html>
     <head>
         <title></title>
-    </head><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='styles/styles.css'>
+    </head>
     <body>
-        <h2>Please enter your choice(rock, paper or scissors)</h2>
-        <form action='/results'>
-            <input type='password' name='player_one'>
-            <label for='player_one'>player one</label>
-            <br>
-            <input type='password' name='player_two'>
-            <label for='player_two'>player two</label>
-            <br>
-            <button type='submit'>Submit</button>
+        <h2>Enter Rock, Paper or scissors</h2>
+        <div class= 'container'>
+          <div class='row'>
+            <div class='col-sm-6'>
+                <form action='/results'>
+                    <div class ='form-group'>
+                        <input type='password' class='form-control' placeholder=
+                        'Player One' name='player_one'>
+                        <label for='player_one'></label>
+            </div>
+        </div>
+          <div class='row'>
+            <div class='col-sm-6'>
+                        <input type='password' class='form-control' placeholder=
+                        'Player Two' name='player_two'>
+                        <label for='player_two'></label>
+                        <br>
+                    </div>
+            </div>
+            <div class='button'>
+                    <button type='submit' class='btn btn-warning'>Submit</button>
+            </div>
 
-        </form>
-
+                </form>
+          </div>
+        </div>
     </body>
 </html>
