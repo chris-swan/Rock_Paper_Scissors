@@ -14,10 +14,10 @@
 
     $app->get("/results", function() use ($app){
         $results = new Rps;
-        $ = $results->rpsGame($_GET['player_one'], $GET['player_two'])
-        /// not complete amd finish here^^^^^^^^  ->
-
-        });
+        $outcome = $results->rpsGame($_GET['player_one'], $_GET['player_two']);
+        /// $outcome likely needs to change^^^^
+        return $app['twig']->render('results.html.twig', array('result' => $outcome));
+    });                      //'result' may need to change as well ^^^
 
     return $app;
 
