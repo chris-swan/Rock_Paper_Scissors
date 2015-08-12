@@ -1,7 +1,10 @@
 Plain language specs                                input               output
 
-1)match one letter word                             'r', 'r'                ['draw']
-2)match with upper case letter                      'R', 'r'                ['draw']
-3)match word with word                            'rock' 'rock'             ['draw']
-4)Test for output words don't match               'rock'  'paper'           [ 'Different options ' ]
-5)Test for words that win/pecking order           'rock' 'paper'            ['paper wins']
+3)Test for words that win/pecking order           'rock' 'rock'             ['draw']
+3)Test for words that win/pecking order           'rock' 'paper'            ['paper wins']
+4)Test for words that win/pecking order           'rock' 'scissors'         ['rock wins']
+
+6)Test for words that win/pecking order           'paper' 'paper'           ['draw']
+7)Test for words that win/pecking order           'paper' 'scissors'        ['scissors wins']
+
+8)Test for words that win/pecking order           'scissors' 'scissors'     ['draw']
