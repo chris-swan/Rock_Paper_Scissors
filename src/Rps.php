@@ -29,7 +29,7 @@
                 $result = "It's a draw!";
             }elseif($lc_one != "rock" || $lc_one != "paper" || $lc_one != "scissors" || $lc_two !=
             "rock"|| $lc_two != "paper" || $lc_two != "scissors"){
-                $result = "Please enter either rock, paper or scissors";
+                $result = "Someone did not enter rock, paper or scissors, please resubmit and check your typing and spelling!";
             }
             return $result;
         }

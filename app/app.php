@@ -15,7 +15,10 @@
     $app->get("/results", function() use ($app){
         $results = new Rps;
         $outcome = $results->rpsGame($_GET['player_one'], $_GET['player_two']);
+        // $player_one_input = $new_player_one_input->rpsGame($_GET['player_one']);
         return $app['twig']->render('results.html.twig', array('result' => $outcome));
+        // return $app['twig']->render('results.html.twig', array('player_one_input' => $player_one_input));
+
     });
 
     return $app;
