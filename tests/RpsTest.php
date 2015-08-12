@@ -16,4 +16,18 @@
             //Assert
             $this->assertEquals("It's a draw!", $result);
         }
+
+        function test_rpsGame_rockPaper()
+        {
+            //Arrange
+            $test_Rps = new Rps;
+            $player_one = "rock";
+            $player_two = "paper";
+
+            //Act
+            $result = $test_Rps->rpsGame($player_one, $player_two);
+
+            //Assert
+            $this->assertEquals("Player Two Wins!", $result);
+        }
     }?>
