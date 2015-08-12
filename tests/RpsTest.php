@@ -14,6 +14,6 @@
             $result = $test_Rps->rpsGame($player_one, $player_two);
 
             //Assert
-            $this->assertEquals("draw", $result);
+            $this->assertEquals("It's a draw!", $result);
         }
     }?>
