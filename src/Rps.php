@@ -36,3 +36,6 @@
     }
 
 ?>
+
+if $lc_one == "rock" && lc_two == [] $a = array("Rock", "paper", "scissors")
+    
